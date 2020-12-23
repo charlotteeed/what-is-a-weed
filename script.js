@@ -1,4 +1,8 @@
 window.onload = function () {
+  // reset the scroll position
+  window.scroll(0, 0); 
+  
+  
   var elmnt1 = document.querySelector("#elem-1");
   var elmnt2 = document.querySelector("#elem-2");
   var elmnt3 = document.querySelector("#elem-3");
@@ -17,6 +21,7 @@ window.onload = function () {
 
 
 console.log(elmnt1.innerHTML);
+  
     elmnt1.onclick = function () {
       elmnt2.scrollIntoView({
         behavior: 'smooth'
