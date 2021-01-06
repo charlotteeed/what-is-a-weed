@@ -1,116 +1,74 @@
-html {
-    scroll-behavior: smooth;
-    font-family: sans-serif;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  body {
-    width: 1000vw;
-    height: 1000vh;
-    perspective: 37000px;
-    overflow: hidden;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: rgb(232, 221, 200) !important;
+}
 
-  }
+.item {
+  width: 50%;
+  min-height: 200px;
+  margin: 50px auto;
+  margin-top: 20vh;
+  padding: 50px 50px 0 0;
+}
 
-  .elem {
-    max-width: 60vw;
-    height: 200px;
-    display: block;
-    cursor: pointer;
-    padding: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transform: rotateY(40deg);
-    transition: all .3s ease;
+.item img {
+  width: 100%;
+  margin-top: -25px;
+}
 
-  }
+.img-half {
+  width: 40%;
+}
 
-  .elem:hover {
-    transform: rotate(0);
-  }
+img.img-smaller {
+  width: 35%;
+  margin-top: -90px;
+}
 
-  .elem-1 {
-    margin: 50px;
-    transform-style: preserve-3d;
-    transform: translateZ(-100px);
-  }
+.img-left {
+  text-align: right;
+}
 
-  .elem-2 {
-    margin-top: 60vh;
-    margin-left: 200vw;
-
-    transform-style: preserve-3d;
-    transform: translateZ(-140px);
-  }
-
-  .elem-3 {
-    margin-top: -50vh;
-    margin-left: 400vw;
-    transform-style: preserve-3d;
-    transform: translateZ(-90px);
-  }
-
-  img {
-    max-width: 50%;
-    padding: 20px;
-  }
-
-  @-webkit-keyframes spaceboots {
-    0% {
-      -webkit-transform: translate(1px, 0.5px) rotate(0deg);
-    }
-
-    10% {
-      -webkit-transform: translate(-0.5px, -1px) rotate(-0.5deg);
-    }
-
-    20% {
-      -webkit-transform: translate(-1.5px, 0px) rotate(0.5deg);
-    }
-
-    30% {
-      -webkit-transform: translate(0px, 1px) rotate(0deg);
-    }
-
-    40% {
-      -webkit-transform: translate(0.5px, -0.5px) rotate(0.5deg);
-    }
-
-    50% {
-      -webkit-transform: translate(-0.5px, 1px) rotate(-0.5deg);
-    }
-
-    60% {
-      -webkit-transform: translate(-1.5px, 0.5px) rotate(0deg);
-    }
-
-    70% {
-      -webkit-transform: translate(1px, 0.5px) rotate(-0.5deg);
-    }
-
-    80% {
-      -webkit-transform: translate(-0.5px, -0.5px) rotate(0.5deg);
-    }
-
-    90% {
-      -webkit-transform: translate(2px, 2px) rotate(0deg);
-    }
-
-    100% {
-      -webkit-transform: translate(1px, -2px) rotate(-1deg);
-    }
-  }
+.group {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  padding: 60px 0;
+  justify-content: space-around;
+}
 
 
+.special-title {
+  margin-right: 15vw;
+  margin-top: -35vh;
+  margin-bottom: 15vh;
+  padding: 50px;
+}
 
-  .shake:hover,
-  .shake:focus {
-    -webkit-animation-name: spaceboots;
-    -webkit-animation-duration: 0.5s;
-    -webkit-transform-origin: 50% 50%;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -webkit-filter: blur(1px);
-    /* Safari 6.0 - 9.0 */
-    filter: blur(1px);
-  }
+.parallax-left {
+  /* The image used */
+  background-image: url("https://ca-times.brightspotcdn.com/dims4/default/3d73eeb/2147483647/strip/true/crop/1292x861+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F62%2F95%2F290a0c9748479ffbb9879364e69a%2Fla-hm-ga-get-rid-of-your-weeds-nut-grass-web-lead.JPG");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+
+.intro {
+  column-count: 2;
+  column-gap: 20px;
+  padding: 50px;
+
+}
