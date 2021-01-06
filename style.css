@@ -36,6 +36,12 @@ img.img-smaller {
   text-align: right;
 }
 
+.img-centered-abs {
+  margin-top: -200px !important;
+  width: 40%;
+  margin-right: 40px;
+}
+
 .group {
   width: 100%;
   margin: 0 auto;
