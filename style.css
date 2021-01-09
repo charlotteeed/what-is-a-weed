@@ -1,15 +1,17 @@
 * {
   box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
+
+html {
+  scroll-behavior: smooth;
 }
+
 html,
 body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  background-color: rgb(232, 221, 200) !important;
+  background-color: #f7f3ec !important;
 }
 
 .item {
@@ -19,7 +21,7 @@ body {
   margin-top: 20vh;
   padding: 50px 50px 0 0;
 
-  
+
 }
 
 .item img {
@@ -28,11 +30,9 @@ body {
 
 img {
   width: 100%;
-  transition: all 0.3s linear;}
-
-img:hover {
-  transform: scale(1.1);
+  transition: all 0.3s linear;
 }
+
 
 .img-half {
   width: 100%;
@@ -75,31 +75,19 @@ img.img-smaller {
 
 
 .img-container {
-    overflow: hidden;
-}
-
-/*
-
-[data-aos="scroll-zoom"] {
-  transform: scale(1);
-  transition-property: transform;
-}
-
-[data-aos="scroll-zoom"].aos-animate {
-  transform: scale(1.5);
-}*/
-
-.hero-section {
-  width: 100%;
-  height: 70rem;
   overflow: hidden;
-  position: relative;
 }
 
-.hero-section img {
-  width: 100%;
+.number-link a {
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%);
+  left: 48%;
+  z-index: 9999;
+  font-size: 3em;
+  color: #092305;
+  transition: all 0.2s ease;
+}
+
+.number-link a:hover {
+  text-decoration: none;
+  color: #164f0e;
 }
