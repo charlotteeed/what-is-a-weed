@@ -1,3 +1,7 @@
+:root {
+  --first-img-width: 60vw;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,7 +15,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  background-color: #f7f3ec !important;
+  background-color: #f3f0eb !important;
 }
 
 .item {
@@ -54,12 +58,20 @@ img.img-smaller {
   justify-content: space-around;
 }
 
+.special-top-title {
+  padding: 50px;
+  color: #f3f0eb;
+  text-shadow: -1px -1px 0 darkgreen, 1px -1px 0 darkgreen, -1px 1px 0 darkgreen, 1px 1px 0 darkgreen;
+}
+
 
 .special-title {
   margin-right: 15vw;
   margin-top: -35vh;
   margin-bottom: 15vh;
   padding: 50px;
+  color: #f3f0eb;
+  text-shadow: -1px -1px 0 darkgreen, 1px -1px 0 darkgreen, -1px 1px 0 darkgreen, 1px 1px 0 darkgreen;
 }
 
 
@@ -69,10 +81,19 @@ img.img-smaller {
   padding: 50px;
   text-align: justify;
   height: 100vh;
-
-
 }
 
+
+#first-img{
+  width:var(--first-img-width);
+}
+
+#first-num{
+    margin-left: calc(var(--first-img-width) - 3%);
+  position: absolute;
+  bottom:40vh;
+  
+}
 
 .img-container {
   overflow: hidden;
@@ -80,10 +101,9 @@ img.img-smaller {
 
 .number-link a {
   position: absolute;
-  left: 48%;
   z-index: 9999;
   font-size: 3em;
-  color: #092305;
+  color: #49893da3;
   transition: all 0.2s ease;
 }
 
