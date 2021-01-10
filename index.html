@@ -4,7 +4,9 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src='script.js'></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" integrity="sha512-rCjfoab9CVKOH/w/T6GbBxnAH5Azhy4+q1EXW5XEURefHbIkRbQ++ZR+GBClo3/d3q583X/gO4FKmOFuhkKrdA==" crossorigin="anonymous"></script>
 
 </head>
 
@@ -22,17 +24,17 @@
       <img src="https://source.unsplash.com/random/1920x1080" alt="Image Alt" />
     </section>
 -->
-<h2 class="number-link"><a href="" target="_blank">0.1</a></h2>
+    <h2 class="number-link"><a href="">0.1</a></h2>
     <div class="img-container" style="width:500px;" data-aos-anchor-placement="top-bottom" data-aos="fade-up">
       <img class="img-half" src="https://ca-times.brightspotcdn.com/dims4/default/3d73eeb/2147483647/strip/true/crop/1292x861+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F62%2F95%2F290a0c9748479ffbb9879364e69a%2Fla-hm-ga-get-rid-of-your-weeds-nut-grass-web-lead.JPG">
     </div>
-    <div class="img-left" data-aos="fade-down">
+    <div class="img-left" data-aos="fade-up">
       <h1 class="special-title">What is a weed</h1>
-      <div class="img-container" style="width:400px; position:absolute; right:0;">
+      <div class="img-container" style="width:400px; margin-left:calc(100vw - 400px);">
         <img class="img-smaller" src="https://ca-times.brightspotcdn.com/dims4/default/3d73eeb/2147483647/strip/true/crop/1292x861+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F62%2F95%2F290a0c9748479ffbb9879364e69a%2Fla-hm-ga-get-rid-of-your-weeds-nut-grass-web-lead.JPG">
       </div>
     </div>
-    <div><br><br>
+    <div style="margin-top:-40vh;"><br><br>
       <p><i>
           <div data-aos="fade-down">Is&nbsp;a&nbsp;weed</div><br>
           <div data-aos="fade-down">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;&nbsp;&nbsp;d&nbsp;i&nbsp;s&nbsp;p&nbsp;l&nbsp;a&nbsp;c&nbsp;e&nbsp;d&nbsp;&nbsp;plant</div>
@@ -69,12 +71,12 @@
       <div class="item" data-aos="fade-down">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur ipsum eget elit suscipit, a ultricies tellus molestie. Cras non diam nec tortor porttitor lacinia. In lacus erat, tristique et felis eu, congue lobortis ante. Nulla tempor quam eu est sollicitudin, eget placerat mauris tempor. Fusce at placerat nunc, quis lacinia justo. Integer semper faucibus eros. Integer lacus turpis, semper sit amet quam a, convallis dignissim nisl. Curabitur ullamcorper lorem at nunc molestie, sed viverra dui auctor. Duis ornare, erat vitae pharetra consequat, nunc massa elementum turpis, ultricies interdum purus ex vel est. Mauris ultricies nec lorem in malesuada. Duis eu consectetur nisi. Sed vitae lacus vehicula, pellentesque nibh in, commodo risus. Nunc faucibus sapien eget odio congue pellentesque. Etiam nec volutpat tellus, ac euismod ex. Praesent et purus non ex scelerisque hendrerit accumsan vitae nibh.</p>
       </div>
-      <div class="img-container" data-aos="fade-left">
+      <div class="img-container" data-aos="fade-up">
         <img src="https://ca-times.brightspotcdn.com/dims4/default/3d73eeb/2147483647/strip/true/crop/1292x861+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F62%2F95%2F290a0c9748479ffbb9879364e69a%2Fla-hm-ga-get-rid-of-your-weeds-nut-grass-web-lead.JPG">
       </div>
     </div>
     <div class="group">
-      <div class="img-container" data-aos="zoom-in">
+      <div class="img-container" data-aos="fade-up">
         <img src="https://ca-times.brightspotcdn.com/dims4/default/3d73eeb/2147483647/strip/true/crop/1292x861+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F62%2F95%2F290a0c9748479ffbb9879364e69a%2Fla-hm-ga-get-rid-of-your-weeds-nut-grass-web-lead.JPG">
       </div>
       <div data-aos="zoom-out">
@@ -104,6 +106,15 @@
     AOS.init({
       duration: 2000,
     })
+
+    $(document).ready(function() {
+      var page = $('#content');
+      $(window).mousewheel(function(event, delta, deltaX, deltaY) {
+        if (delta < 0) page.scrollTop(page.scrollTop() + 100);
+        else if (delta > 0) page.scrollTop(page.scrollTop() - 100);
+        return false;
+      })
+    });
 
     window.scroll({
 
