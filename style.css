@@ -8,6 +8,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: sans-serif;
 }
 
 html,
@@ -16,6 +17,31 @@ body {
   margin: 0;
   overflow-x: hidden;
   background-color: #f3f0eb !important;
+}
+
+@font-face {
+  font-family: "MonetaSans";
+  src: url("/assets/monetasans-black-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Interstate";
+  src: url("/assets/interstate-extralight_24128-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Interstate Italic";
+  src: url("/assets/Interstate-Regular-Italic_24142-webfont.woff") format("woff");
+}
+
+
+p, div{
+  font-family: "Interstate", sans-serif;
+  
+}
+
+i{
+  font-family: "Interstate", sans-serif;
 }
 
 .item {
@@ -34,7 +60,7 @@ body {
 
 img {
   width: 100%;
-  transition: all 0.3s linear;
+  transition: all 0.7s ease;
 }
 
 
@@ -62,6 +88,7 @@ img.img-smaller {
   padding: 50px;
   color: #f3f0eb;
   text-shadow: -1px -1px 0 darkgreen, 1px -1px 0 darkgreen, -1px 1px 0 darkgreen, 1px 1px 0 darkgreen;
+  font-family: "MonetaSans";
 }
 
 
@@ -72,13 +99,14 @@ img.img-smaller {
   padding: 50px;
   color: #f3f0eb;
   text-shadow: -1px -1px 0 darkgreen, 1px -1px 0 darkgreen, -1px 1px 0 darkgreen, 1px 1px 0 darkgreen;
+   font-family: "MonetaSans";
 }
 
 
 .intro {
   column-count: 2;
   column-gap: 60px;
-  padding: 50px;
+  padding: 50px 130px;
   text-align: justify;
   height: 100vh;
 }

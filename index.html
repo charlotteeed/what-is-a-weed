@@ -1,12 +1,10 @@
 <head>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src='script.js'></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js" integrity="sha512-rCjfoab9CVKOH/w/T6GbBxnAH5Azhy4+q1EXW5XEURefHbIkRbQ++ZR+GBClo3/d3q583X/gO4FKmOFuhkKrdA==" crossorigin="anonymous"></script>
 
 </head>
 
@@ -17,7 +15,7 @@
   <div class="img-container" id="first-img">
     <img class="img-half" src="https://ca-times.brightspotcdn.com/dims4/default/3d73eeb/2147483647/strip/true/crop/1292x861+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F62%2F95%2F290a0c9748479ffbb9879364e69a%2Fla-hm-ga-get-rid-of-your-weeds-nut-grass-web-lead.JPG"></div>
   <div data-scroll class="intro">
-    <p>On camera, famed British gardener Bannerman asks this seemingly simple question whilst walking in his Trematon Castle garden in Cornwall, with a spiky giant Gunnera in hand, the leaves acting as an oversized umbrella over the imposing man. Yet, he spent months removing the invasive petasites from the grounds of the garden when he first started working on it.</p>
+    <p style="margin:0;">On camera, famed British gardener Bannerman asks this seemingly simple question whilst walking in his Trematon Castle garden in Cornwall, with a spiky giant Gunnera in hand, the leaves acting as an oversized umbrella over the imposing man. Yet, he spent months removing the invasive petasites from the grounds of the garden when he first started working on it.</p>
     <p>Here lies the complexity of offering an answer to this treacherous interrogation. A plant is, first and foremost, regarded as a weed according to its desirability to humans in a given context. In this human-centric perspective, it is a plant that is not valued for certain of its particular characteristics and properties, making it undesirable, to be eradicated through various &mdash; often violent &mdash; methods. As the famous gardener asks us to reconsider our narrow conceptions of nature, at the core of his role, lies the desire to control and manipulate nature.&nbsp;</p>
     <p>What do these plants become when growing in an alternate third space (or is it the first space)? Vegetal practices such as gardening have a long history of control and conditioning of nature as a separate, subservient non-human entity &mdash; the desire to tame it in accordance with human&rsquo;s use of space. Weeding out undesirable plants is a part of this practice. What potential then lies in relinquishing control to these undesirables? Is this ground for a rewilding revolution, a quiet resistance and decolonial utopia? To think through the question of what is a weed is to problematize the varied notions, to become conscious of the dualistic divide of nature and culture, and to break it down like a mycellic cell in a heap of soil and humus.&nbsp;</p>
     <p>This collaborative multi-disciplined project, which premises itself on the idea of vegetal and human entanglements, weaves a collection of provocations, questions and investigations that explore and interrogate the multi-faceted notions of a weed through essays of images and texts using the digital landscape as fertile ground to germinate from. We agitate metaphysical soil and thread together plant provocations and metaphors. We explore the weed&rsquo;s place in the construction of landscapes, botanical migration across the globe and we situate the body as a landscape.</p>
@@ -104,15 +102,6 @@
     AOS.init({
       duration: 2000,
     })
-
-    $(document).ready(function() {
-      var page = $('#content');
-      $(window).mousewheel(function(event, delta, deltaX, deltaY) {
-        if (delta < 0) page.scrollTop(page.scrollTop() + 300);
-        else if (delta > 0) page.scrollTop(page.scrollTop() - 300);
-        return false;
-      })
-    });
 
     window.scroll({
 
