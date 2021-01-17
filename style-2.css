@@ -24,12 +24,12 @@ body {
 
 @font-face {
     font-family: "MonetaSans";
-    src: url("/assets/fonts/monetasans-black-webfont.woff") format("woff");
+    src: url("/what-is-a-weed/assets/fonts/monetasans-black-webfont.woff") format("woff");
 }
 
 @font-face {
     font-family: "Din";
-    src: url("/assets/fonts/din_alternate_bold-webfont.woff") format("woff");
+    src: url("/what-is-a-weed/assets/fonts/din_alternate_bold-webfont.woff") format("woff");
 }
 
 
@@ -119,7 +119,7 @@ img {
 }
 
 .header{
-    transition: all 1s ease;
+    transition: opacity 1s ease;
 }
 .sticky{
     position: fixed;
