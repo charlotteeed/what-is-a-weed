@@ -21,18 +21,14 @@ body {
 
 @font-face {
   font-family: "MonetaSans";
-  src: url("/what-is-a-weed/assets/monetasans-black-webfont.woff") format("woff");
+  src: url("/what-is-a-weed/assets/fonts/monetasans-black-webfont.woff") format("woff");
 }
 
 @font-face {
   font-family: "Interstate";
-  src: url("/what-is-a-weed/assets/interstate-extralight_24128-webfont.woff") format("woff");
+  src: url("/what-is-a-weed/assets/fonts/din_alternate_bold-webfont.woff") format("woff");
 }
 
-@font-face {
-  font-family: "Interstate Italic";
-  src: url("/what-is-a-weed/assets/Interstate-Regular-Italic_24142-webfont.woff") format("woff");
-}
 
 
 p, div{
