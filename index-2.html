@@ -193,23 +193,39 @@
     $(window).scroll(function() {
         var scrollH = $(window).scrollTop();
         console.log(scrollH);
-        if (scrollH < 3200) {
+//        if (scrollH < 3200) {
+//            $(".img").css({
+//                width: (100 + scrollH / 100) + "%"
+//            })
+//        } else if (scrollH < 4000) {
+//            $(".img").css({
+//                width: (100 + scrollH / 300) + "%"
+//            })
+//        } else if (scrollH < 5000) {
+//            $(".img").css({
+//                width: (100 + scrollH / 500) + "%"
+//            })
+//        }
+        
+        if (scrollH < 2000) {
             $(".img").css({
                 width: (100 + scrollH / 100) + "%"
             })
-        } else if (scrollH < 4000) {
+        } else if (scrollH < 3500) {
             $(".img").css({
-                width: (100 + scrollH / 300) + "%"
+                width: (100 + scrollH / 150) + "%"
             })
         } else if (scrollH < 5000) {
             $(".img").css({
                 width: (100 + scrollH / 500) + "%"
             })
         }
+        
+        
     })
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 1) {
+        if ($(this).scrollTop() > 200) {
             $('.header').addClass("sticky");
             $('.intro').addClass("sticky-bottom");
         } else {
