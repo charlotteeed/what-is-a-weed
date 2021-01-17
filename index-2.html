@@ -1,6 +1,7 @@
 <html><head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-2.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src='script.js'></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
@@ -9,6 +10,25 @@
 </head>
 
 <body>
+    <div class="top-nav">
+        <button>FR</button>
+        <button>HOME</button>
+    </div>
+    <div class="row">
+        <div class="col-md-6"><img class="line-drawing" src="assets/images/line%20drawing-01.svg"></div>
+        <div class="col-md-6">
+            <blockquote class="main-quote">“What is a weed?<br>
+                Oh, what is a weed?”<br>
+                - Julian Bannerman, Great Gardens: Trematon Castle, Nowness</blockquote>
+        </div>
+    </div>
+    <h1>What is a weed?</h1>
+    <div data-scroll class="intro">
+        <p style="margin:0;">On camera, famed British gardener Bannerman asks this seemingly simple question whilst walking in his Trematon Castle garden in Cornwall, with a spiky giant Gunnera in hand, the leaves acting as an oversized umbrella over the imposing man. Yet, he spent months removing the invasive petasites from the grounds of the garden when he first started working on it.</p>
+        <p>Here lies the complexity of offering an answer to this treacherous interrogation. A plant is, first and foremost, regarded as a weed according to its desirability to humans in a given context. In this human-centric perspective, it is a plant that is not valued for certain of its particular characteristics and properties, making it undesirable, to be eradicated through various &mdash; often violent &mdash; methods. As the famous gardener asks us to reconsider our narrow conceptions of nature, at the core of his role, lies the desire to control and manipulate nature.&nbsp;</p>
+        <p>What do these plants become when growing in an alternate third space (or is it the first space)? Vegetal practices such as gardening have a long history of control and conditioning of nature as a separate, subservient non-human entity &mdash; the desire to tame it in accordance with human&rsquo;s use of space. Weeding out undesirable plants is a part of this practice. What potential then lies in relinquishing control to these undesirables? Is this ground for a rewilding revolution, a quiet resistance and decolonial utopia? To think through the question of what is a weed is to problematize the varied notions, to become conscious of the dualistic divide of nature and culture, and to break it down like a mycellic cell in a heap of soil and humus.&nbsp;</p>
+        <p>This collaborative multi-disciplined project, which premises itself on the idea of vegetal and human entanglements, weaves a collection of provocations, questions and investigations that explore and interrogate the multi-faceted notions of a weed through essays of images and texts using the digital landscape as fertile ground to germinate from. We agitate metaphysical soil and thread together plant provocations and metaphors. We explore the weed&rsquo;s place in the construction of landscapes, botanical migration across the globe and we situate the body as a landscape.</p>
+    </div>
 </body>
 <script>
     AOS.init({
@@ -22,7 +42,7 @@
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        $("img").css({
+        $(".img").css({
             width: (100 + scroll / 100) + "%"
         })
     })
