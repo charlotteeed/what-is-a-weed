@@ -1,5 +1,6 @@
 :root {
     --dark-green: darkgreen;
+    --num-pink: lightcoral;
     
 }
 
@@ -66,6 +67,7 @@ img {
     border:0;
     padding:10px
 }
+
 .line-drawing{
     position: absolute;
     top:-50;
@@ -80,3 +82,26 @@ img {
     line-height: 1.8em;
 }
 
+.number-nav{
+    font-size: 8em;
+    color: var(--num-pink);
+}
+
+.img-container {
+  overflow: hidden;
+}
+
+#img-1{
+    width: 750px;
+    height:560px;
+    margin:0 auto;
+}
+
+#img-2{
+    width: 625px;
+    height: 514px;
+}
+
+.util-padding{
+    margin:0 10%;
+}
