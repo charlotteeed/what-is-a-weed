@@ -25,19 +25,19 @@ body {
 }
 
 @font-face {
-  font-family: "Interstate";
+  font-family: "Din";
   src: url("/what-is-a-weed/assets/fonts/din_alternate_bold-webfont.woff") format("woff");
 }
 
 
 
 p, div{
-  font-family: "Interstate", sans-serif;
+  font-family: "din", sans-serif;
   
 }
 
 i{
-  font-family: "Interstate", sans-serif;
+  font-family: "din", sans-serif;
 }
 
 .item {

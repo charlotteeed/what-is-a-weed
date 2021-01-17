@@ -1,0 +1,48 @@
+:root {
+    --first-img-width: 60vw;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #f3f0eb !important;
+}
+
+@font-face {
+    font-family: "MonetaSans";
+    src: url("/what-is-a-weed/assets/fonts/monetasans-black-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Din";
+    src: url("/what-is-a-weed/assets/fonts/din_alternate_bold-webfont.woff") format("woff");
+}
+
+
+
+p,
+div,
+span {
+    font-family: "din", sans-serif;
+
+}
+
+h1 {
+    font-family: "MonetaSans", serif;
+}
+
+img {
+    width: 100%;
+    transition: all 0.7s ease;
+}
