@@ -104,6 +104,15 @@ img {
     height: 430px;
     margin-right:10%;
 }
+#img-4 {
+    width:650px;
+    height: 434px;
+}
+#img-5 {
+    width:1000px;
+    height: 800px;
+}
+
 
 .util-padding {
     margin: 0 10%;
