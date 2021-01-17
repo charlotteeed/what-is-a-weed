@@ -117,3 +117,20 @@ img {
 .util-padding {
     margin: 0 10%;
 }
+
+.header{
+    transition: all 1s ease;
+}
+.sticky{
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+.sticky-bottom{
+    padding-top: 190px;
+}
+
+.ghost{
+    opacity: 0;
+}
