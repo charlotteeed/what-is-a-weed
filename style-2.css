@@ -1,5 +1,6 @@
 :root {
-    --first-img-width: 60vw;
+    --dark-green: darkgreen;
+    
 }
 
 * {
@@ -21,26 +22,33 @@ body {
 
 @font-face {
     font-family: "MonetaSans";
-    src: url("/what-is-a-weed/assets/fonts/monetasans-black-webfont.woff") format("woff");
+    src: url("/assets/fonts/monetasans-black-webfont.woff") format("woff");
 }
 
 @font-face {
     font-family: "Din";
-    src: url("/what-is-a-weed/assets/fonts/din_alternate_bold-webfont.woff") format("woff");
+    src: url("/assets/fonts/din_alternate_bold-webfont.woff") format("woff");
 }
 
 
 
 p,
 div,
-span, blockquote {
+span{
     font-family: "din", sans-serif;
 
+}
+
+blockquote {
+      font-family: "MonetaSans", serif;
+    font-size: 1.4em;
 }
 
 h1 {
     font-family: "MonetaSans", serif;
     text-align: center;
+    color:var(--dark-green);
+    font-size: 8em !important;
 }
 
 img {
@@ -66,8 +74,9 @@ img {
 .intro {
   column-count: 2;
   column-gap: 60px;
-  padding: 50px 130px;
+  padding: 50px 20%;
   text-align: justify;
   height: 100vh;
+    line-height: 1.8em;
 }
 
